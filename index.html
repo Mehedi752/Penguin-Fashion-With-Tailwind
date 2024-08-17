@@ -24,16 +24,24 @@
 </head>
 
 <body class="font-roboto">
-    <header class="bg-[#FFFBF0]">
-        <nav class="mx-w-[1200px] flex justify-around py-12">
+
+    <!-- Header Parts -->
+    <header class="bg-[#FFFBF0] sm:px-7">
+
+        <!-- Navbar Parts -->
+        <nav class="max-w-[1200px] mx-auto flex justify-between py-[75px]">
+
+            <!-- Nav Logo Parts -->
             <div class="flex justify-between gap-3">
-                <img src="./icons/nav-logo.png" alt="" class="w-[56] h-[40]">
+                <img src="./icons/nav-logo.png" alt="" class="w-[56px] h-[40px]">
                 <h4 class="text-3xl font-bold">
-                    <span class="text-[#A4BC46]">Penguin</span> 
+                    <span class="text-[#A4BC46]">Penguin</span>
                     <span class="text-[#363958]">Fashion</span>
                 </h4>
             </div>
 
+
+            <!-- Nav Items -->
             <div class="sm:hidden md:flex md:justify-between md:gap-12">
                 <p class="text-[#3C3C3C] font-medium">Home</p>
                 <p class="text-[#3C3C3C] font-medium">Product</p>
@@ -47,18 +55,20 @@
         </nav>
 
         <!-- Banner Part -->
-        <div class="max-w-[1200px] mx-auto md:flex md:items-center md:justify-between">
+        <div class="max-w-[1200px] mx-auto md:flex md:items-center md:justify-between md:pt-[60px] md:pb-[195px]">
 
             <div class="">
 
                 <!-- Banner Content Part -->
-                <h3 class="text-7xl uppercase font-bebas-neue">
+                <h3 class="text-7xl uppercase font-bebas-neue mb-4">
                     <span class="text-[#FABE4C]">Be the Penguins</span>
                     <br>
                     <span class="text-[#363958] font-bebas-neue">of Winter</span>
                 </h3>
-                <p class="">Lorem Ipsum is simply dummy text of the printing
+
+                <p class="mb-4">Lorem Ipsum is simply dummy text of the printing
                     and typesetting industry.</p>
+
                 <button
                     class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-8 py-4 rounded-xl font-medium text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -68,24 +78,28 @@
                     </svg>
                     Buy Now
                 </button>
+
             </div>
 
             <!-- Bannner Image Part -->
-            <div class="">
-                <img src="./images/model.png" alt="" class="">
+            <div class="sm:px-[90px] sm:pt-5">
+                <img src="./images/model.png" alt="" class="sm:text-center">
             </div>
 
         </div>
+
     </header>
 
-    <main class="max-w-7xl mx-auto">
+
+
+    <main class="max-w-7xl mx-auto sm:p-7">
 
         <!-- Woman Jacket Section -->
-        <section class="my-24">
+        <section class="my-24 ">
             <h3 class="text-5xl text-[#363958] uppercase font-bebas-neue mb-10">Woman Jacket</h3>
 
             <!-- Jacket Card Container -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+            <div class="grid sm:grid-cols-1 sm:gap-12 md:grid-cols-2 lg:grid-cols-3 gap-7">
 
                 <!-- Jacket Card - 1 -->
                 <div class="p-5 border-4 rounded-3xl space-y-4 drop-shadow-lg">
@@ -114,7 +128,7 @@
                 <!-- Jacket Card - 2 -->
                 <div class="p-5 border-4 rounded-3xl space-y-4 drop-shadow-lg">
                     <img src="./images/jacket-2.png" alt="" class="rounded-3xl p-5 bg-[#F1F1F1]">
-                    <h4 class="text-2xl text-[#363958] font-bold">Yellow Coat Jacket </h4>
+                    <h4 class="text-2xl text-[#363958] font-bold">Ladies Jacket </h4>
                     <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry.</p>
 
@@ -139,7 +153,7 @@
                 <div class="p-5 border-4 rounded-3xl space-y-4 drop-shadow-lg">
 
                     <img src="./images/jacket-3.png" alt="" class="rounded-3xl p-5 bg-[#F1F1F1]">
-                    <h4 class="text-2xl text-[#363958] font-bold">Yellow Coat Jacket </h4>
+                    <h4 class="text-2xl text-[#363958] font-bold">Woman Leather Jacket</h4>
                     <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry.</p>
 
@@ -168,7 +182,7 @@
             <h3 class="text-5xl text-[#363958] uppercase font-bebas-neue mb-10">Man Jacket</h3>
 
             <!-- Jacket Card Container -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+            <div class="grid sm:grid-cols-1 sm:gap-12 md:grid-cols-2 lg:grid-cols-3 gap-7">
 
                 <!-- Jacket Card - 1 -->
                 <div class="p-5 border-4 rounded-3xl space-y-4 drop-shadow-lg">
@@ -244,8 +258,67 @@
             </div>
         </section>
 
+
+        <footer class="sm:my-12 my-24 sm:p-7">
+
+            <!-- Footer Content -->
+            <div class="max-w-[1200px] mx-auto flex sm:flex-col-reverse sm:gap-20 md:flex-row md:justify-between">
+
+                <div class="flex flex-col justify-between md:gap-4 sm:gap-10">
+
+
+                    <!-- Footer Content Box - 1 -->
+                    <div class="sm:w-full sm:h-[240px] flex sm:flex-col md:flex-row items-center md:gap-9 md:w-[489px] md:h-[135px] rounded-3xl bg-[#FFFFFF] 
+                    shadow-[0_10px_30px_0px_rgba(0,0,0,0.5)]">
+                        <div class="sm:text-center">
+                            <img src="./icons/house.png" alt="" class=" w-[78px] h-[82px] ml-[26px] my-[26px]">
+                        </div>
+                        <div class="flex-col sm:text-center md:text-left">
+                            <h4 class="text-2xl text-[#363958] font-bold">Find the Perfect Fit</h4>
+                            <p class="text-[#3E3E3E]">Everybody is different, which is why we
+                                offer styles for every body.</p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Content Box - 2 -->
+                    <div class="sm:w-full sm:h-[240px] flex sm:flex-col md:flex-row items-center md:gap-9 md:w-[489px] md:h-[135px] rounded-3xl bg-[#FFFFFF] 
+                    shadow-[0_10px_30px_0px_rgba(0,0,0,0.5)]">
+                        <div class="box-image">
+                            <img src="./icons/box.png" alt="" class="w-[78px] h-[82px] ml-[26px] my-[26px]">
+                        </div>
+                        <div class="flex-col sm:text-center md:text-left">
+                            <h4 class="text-2xl text-[#363958] font-bold">Free Exchanges</h4>
+                            <p class="text-[#3E3E3E]">One of the many reasons you can shop
+                                with peace of mind.</p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Content Box - 3 -->
+                    <div class="sm:w-full sm:h-[240px] flex sm:flex-col md:flex-row items-center md:gap-9 md:w-[489px] md:h-[135px] rounded-3xl bg-[#FFFFFF] 
+                    shadow-[0_10px_30px_0px_rgba(0,0,0,0.5)]">
+                        <div class="">
+                            <img src="./icons/question.png" alt="" class="w-[78px] h-[82px] ml-[26px] my-[26px]">
+                        </div>
+                        <div class="flex-col sm:text-center md:text-left">
+                            <h4 class="text-2xl text-[#363958] font-bold">Contact Our Seller</h4>
+                            <p class="text-[#3E3E3E]">They are here to help you. That's quite
+                                literally what we pay them for.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Footer Image -->
+                <div class="sm:mt-0 mt-[40px] md:w-[599px] md:h-[354.07px]">
+                    <img src="./images/shopping.png" alt="" class="md:w-[599px] md:h-[354.07px]">
+                </div>
+
+            </div>
+
+        </footer>
     </main>
 
-</body>
 
+</body>
 </html>
